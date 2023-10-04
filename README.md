@@ -46,7 +46,7 @@ Before using this application, ensure you have the following prerequisites:
    $collection = $database->your_collection_name; // Replace with your collection name
    ```
 
-3. Run the PHP script by accessing it through your web server. For example, if you're using a local development server, you can access the script at `http://localhost/your-repo-name/index.php`.
+3. Run the PHP script by accessing it through your web server. For example, if you're using a local development server, you can access the script at `http://localhost/codeinfinity/index.php`.
 
 4. Fill out the form with the required information: Name, Surname, ID Number, and Date of Birth (in the format dd/mm/YYYY).
 
