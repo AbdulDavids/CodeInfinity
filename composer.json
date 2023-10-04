@@ -1,0 +1,17 @@
+{
+    "name": "user/code-infinity",
+    "require": {
+        "mongodb/mongodb": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "User\\CodeInfinity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AbdulDavids",
+            "email": "abdulbaaridavids04@gmail.com"
+        }
+    ]
+}
