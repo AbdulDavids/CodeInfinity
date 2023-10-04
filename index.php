@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-    // Validate the ID Number format (numeric and 13 characters)
+    // Validate the ID Number format
     if (!is_numeric($idNumber) || strlen($idNumber) !== 13) {
         echo "<script>alert('Invalid ID Number format. It must be a 13-digit numeric value.')</script>";
     } else {
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-            // Validate the Date of Birth format (dd/mm/YYYY), 
+            // validate the Date of Birth format (dd/mm/YYYY), 
             $dobDate = DateTime::createFromFormat('d/m/Y', $dob);
             $dobErrors = DateTime::getLastErrors();
             if ($dobDate && $dobErrors['warning_count'] === 0 && $dobErrors['error_count'] === 0) {
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-                // Insert data into MongoDB
+                // insert data into mongo
                 $data = [
                     'Name' => $name,
                     'Surname' => $surname,
